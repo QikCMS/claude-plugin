@@ -1,0 +1,6 @@
+{
+  "qikcms": {
+    "type": "http",
+    "url": "https://mcp.qikcms.com/mcp"
+  }
+}
