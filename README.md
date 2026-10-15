@@ -12,8 +12,13 @@ components, not out of HTML.
 | --- | --- |
 | `.mcp.json` | Points Claude at `https://mcp.qikcms.com/mcp`. Sign-in is OAuth, so there is no token to paste |
 | `skills/building-pages` | The order of operations for a build, and the constraints the CMS enforces |
+| `skills/building-forms` | Forms, which use a separate component vocabulary from pages |
+| `skills/dynamic-content-comps` | Why a grid of products or posts is a dynamic comp, not hand-built cards |
+| `skills/styling-and-tailwind` | Tailwind 3 styling keys, and what the API refuses or silently converts |
+| `skills/using-the-tool-catalog` | Reaching the ~90 tools behind search_tools and execute_tools |
 | `skills/publishing-changes` | Drafts versus the things that go live the moment they are written |
 | `skills/copying-between-sites` | Reusing a layout across sites, where ids do not carry over |
+| `skills/recovering-from-refusals` | What a refused call means, and who can actually fix it |
 | `commands/build.md` | `/qikcms:build`, an entry point that loads the site and the rules first |
 
 The build rules themselves are **not** in this repository. They are served by the CMS through the

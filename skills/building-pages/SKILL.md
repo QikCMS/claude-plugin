@@ -88,6 +88,17 @@ question with that output behind it rather than a list of platform gaps.
 If the user asks you to break a build rule to match a design, name the rule, say what breaking it
 would cost them, and offer the supported route to the same look.
 
+## Related skills
+
+- **`styling-and-tailwind`** before you set any styling key. Several values are refused or
+  silently rewritten, which is worth knowing before you send them.
+- **`dynamic-content-comps`** before you build a grid of cards for products, posts, events or
+  anything else the site already holds as records.
+- **`building-forms`** for forms, which use a different component vocabulary entirely.
+- **`using-the-tool-catalog`** when what you need is not one of the thirteen listed tools, which
+  includes reading a page's real tree and editing a single comp.
+- **`recovering-from-refusals`** when a call comes back refused.
+
 ## Publishing
 
 Page and component edits land as **drafts**. Publishing is a separate, deliberate act and needs
