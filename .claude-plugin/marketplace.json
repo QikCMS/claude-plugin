@@ -1,8 +1,8 @@
 {
-  "name": "quiksites",
-  "description": "QuikSites plugins for Claude: build and edit QikCMS websites across every site on your account.",
+  "name": "qiksolutions",
+  "description": "QikSolutions plugins for Claude: build and edit QikCMS websites across every site on your account.",
   "owner": {
-    "name": "QuikSites",
+    "name": "QikSolutions",
     "url": "https://qikcms.com"
   },
   "plugins": [

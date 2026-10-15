@@ -22,9 +22,17 @@ fall out of step with the platform. The skills tell Claude to call them; they do
 
 ## Install
 
+From your shell:
+
 ```bash
 claude plugin marketplace add CodyPChristian/tba-qikcms-claude-plugin
-claude plugin install qikcms@quiksites
+claude plugin install qikcms@qiksolutions
+```
+
+Or in one step from inside a session, on Claude Code 2.1.275 or later:
+
+```text
+/plugin install qikcms --marketplace CodyPChristian/tba-qikcms-claude-plugin
 ```
 
 Then start Claude Code and run `/mcp` to sign in. A browser opens; if it cannot, Claude Code
@@ -35,8 +43,12 @@ later, or disconnect it, under **Account, Connected apps** in the QikCMS portal.
 
 ## Who can use it
 
-Company owners and QuikSites admins. The gateway re-checks membership on every call, so access
-removed in the portal takes effect on the next request rather than whenever a token expires.
+Company owners and QikCMS platform administrators. The gateway re-checks membership on every call,
+so access removed in the portal takes effect on the next request rather than whenever a token
+expires.
+
+A person who is not an owner of a company gets refused even with the plugin installed, including a
+developer working on someone else's account.
 
 ## Requirements
 
