@@ -58,12 +58,12 @@ developer working on someone else's account.
 
 ## Before the public listing
 
-- `supportUrl` is **not** set in `plugin.json`, because `https://support.qikcms.com/tickets`
-  currently redirects to itself and loops. Set it once that host is fixed; the other four
-  directory listing fields are set and verified
-- `documentationUrl` points at `https://docs.qikcms.com`, which answers 200 and sends `/` to
-  `/dashboard`. Worth opening it signed out before submitting, so a reviewer does not land on
-  something that looks like an app shell
+- All five directory listing fields are set. `documentationUrl` and `supportUrl` both point at
+  `https://docs.qikcms.com`, which is titled "QikCMS Support Docs" and serves both purposes.
+  `support.qikcms.com` is not used because it currently redirects to itself and loops; point
+  `supportUrl` there once that host is fixed, if you would rather separate the two
+- `docs.qikcms.com` answers 200 and sends `/` to `/dashboard`. Worth opening it signed out before
+  submitting, so a reviewer does not land on something that looks like an empty app shell
 - Submit from the organization that should own the listing long term. The first organization to
   submit a given repository folder holds it, and a second organization's submission of the same
   one is refused
