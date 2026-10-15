@@ -25,14 +25,14 @@ fall out of step with the platform. The skills tell Claude to call them; they do
 From your shell:
 
 ```bash
-claude plugin marketplace add CodyPChristian/tba-qikcms-claude-plugin
+claude plugin marketplace add QikCMS/claude-plugin
 claude plugin install qikcms@qiksolutions
 ```
 
 Or in one step from inside a session, on Claude Code 2.1.275 or later:
 
 ```text
-/plugin install qikcms --marketplace CodyPChristian/tba-qikcms-claude-plugin
+/plugin install qikcms --marketplace QikCMS/claude-plugin
 ```
 
 Then start Claude Code and run `/mcp` to sign in. A browser opens; if it cannot, Claude Code
@@ -58,8 +58,11 @@ developer working on someone else's account.
 
 ## Before the public listing
 
-- `repository` in `plugin.json` points at the current private repo and needs updating when this
-  moves to its final home
 - Anthropic's directory reads `icon`, `documentationUrl`, `supportUrl`, `privacyPolicyUrl` and
-  `termsOfServiceUrl` from `plugin.json`. None are set yet; set them before submitting
-- The repository must be public before a directory listing goes live
+  `termsOfServiceUrl` from `plugin.json`. None are set yet, and the directory uses them for the
+  listing, so set them before submitting
+- Submit from the organization that should own the listing long term. The first organization to
+  submit a given repository folder holds it, and a second organization's submission of the same
+  one is refused
+- The gateway goes in separately as an MCP connector, which needs only its URL. Submitted from the
+  same organization, the two listings can be paired
