@@ -58,9 +58,12 @@ developer working on someone else's account.
 
 ## Before the public listing
 
-- Anthropic's directory reads `icon`, `documentationUrl`, `supportUrl`, `privacyPolicyUrl` and
-  `termsOfServiceUrl` from `plugin.json`. None are set yet, and the directory uses them for the
-  listing, so set them before submitting
+- `supportUrl` is **not** set in `plugin.json`, because `https://support.qikcms.com/tickets`
+  currently redirects to itself and loops. Set it once that host is fixed; the other four
+  directory listing fields are set and verified
+- `documentationUrl` points at `https://docs.qikcms.com`, which answers 200 and sends `/` to
+  `/dashboard`. Worth opening it signed out before submitting, so a reviewer does not land on
+  something that looks like an app shell
 - Submit from the organization that should own the listing long term. The first organization to
   submit a given repository folder holds it, and a second organization's submission of the same
   one is refused

@@ -15,5 +15,9 @@
     "website",
     "pages",
     "page-builder"
-  ]
+  ],
+  "icon": "./icon.jpg",
+  "documentationUrl": "https://docs.qikcms.com",
+  "privacyPolicyUrl": "https://qikcms.com/legal/privacy",
+  "termsOfServiceUrl": "https://qikcms.com/legal/terms"
 }
