@@ -95,7 +95,7 @@ would cost them, and offer the supported route to the same look.
 - **`dynamic-content-comps`** before you build a grid of cards for products, posts, events or
   anything else the site already holds as records.
 - **`building-forms`** for forms, which use a different component vocabulary entirely.
-- **`using-the-tool-catalog`** when what you need is not one of the thirteen listed tools, which
+- **`using-the-tool-catalog`** when what you need is not one of the fourteen listed tools, which
   includes reading a page's real tree and editing a single comp.
 - **`recovering-from-refusals`** when a call comes back refused.
 

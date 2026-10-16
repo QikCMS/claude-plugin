@@ -1,11 +1,11 @@
 ---
 name: using-the-tool-catalog
-description: Find and run a QikCMS tool that is not in the main tool list. Use when a QikCMS task needs something beyond the thirteen listed tools, such as reading a page stack, creating a page, editing one component, listing blueprints, menus, redirects, global styling or collections, or when a qikcms:// resource read fails.
+description: Find and run a QikCMS tool that is not in the main tool list. Use when a QikCMS task needs something beyond the fourteen listed tools, such as reading a page stack, creating a page, editing one component, listing blueprints, menus, redirects, global styling or collections, or when a qikcms:// resource read fails.
 ---
 
 # Reaching the rest of the QikCMS tools
 
-Thirteen tools are listed directly. Most of the surface, roughly another ninety, sits behind two
+Fourteen tools are listed directly. Most of the surface, roughly another ninety, sits behind two
 of them. If the thing you need is not in the list, it almost certainly exists.
 
 ## The pair
