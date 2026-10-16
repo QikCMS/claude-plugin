@@ -1,6 +1,6 @@
 ---
 description: Start a QikCMS build with the site chosen and the build rules loaded
-argument-hint: [site] [what to build]
+argument-hint: "[site] [what to build]"
 ---
 
 # Start a QikCMS build

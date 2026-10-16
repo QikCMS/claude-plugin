@@ -16,6 +16,7 @@
     "pages",
     "page-builder"
   ],
+  "license": "MIT",
   "icon": "./icon.jpg",
   "documentationUrl": "https://docs.qikcms.com",
   "supportUrl": "https://docs.qikcms.com",
