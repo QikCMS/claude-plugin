@@ -16,7 +16,11 @@ components, not out of HTML.
 | `skills/writing-blog-posts` | Posts, their draft layer, and which fields are live the moment they save |
 | `skills/dynamic-content-comps` | Why a grid of products or posts is a dynamic comp, not hand-built cards |
 | `skills/styling-and-tailwind` | Tailwind 3 styling keys, and what the API refuses or silently converts |
-| `skills/using-the-tool-catalog` | Reaching the ~90 tools behind search_tools and execute_tools |
+| `skills/using-the-tool-catalog` | Reaching the ~120 tools behind search_tools and execute_tools |
+| `skills/managing-galleries` | Galleries, where the gallery is a shell and its assets are the content |
+| `skills/managing-polls` | Polls, and why an option's id is what its votes are attached to |
+| `skills/media-images-and-documents` | Three separate libraries whose tool names do not say which is which |
+| `skills/custom-content-types` | The site's own content types, their items and their category tree |
 | `skills/publishing-changes` | Drafts versus the things that go live the moment they are written |
 | `skills/copying-between-sites` | Reusing a layout across sites, where ids do not carry over |
 | `skills/recovering-from-refusals` | What a refused call means, and who can actually fix it |

@@ -60,23 +60,21 @@ Worth knowing so you look rather than conclude a thing is impossible: reading a 
 vocabulary, menus, redirects, global styling, global variables, the header and footer, page FAQs,
 collections where that feature is on, and the publish tools.
 
-Then the content areas, each a full set of list, get, create, update and delete:
+Then the content areas, each a full set of list, get, create, update and delete. Each has a skill
+of its own with the rules that matter, so read that rather than working it out from the schemas:
 
-- **Blog posts and their categories.** Categories are a tree, and a post's categories are set on
-  the post itself rather than on the category.
-- **Galleries.** A gallery is only a shell: its assets are the content, which is what the asset
-  tools are for. A gallery created without them renders as an empty page.
-- **Polls.** Votes come back as totals and can never be written.
-- **Custom content**, meaning the owner's own content types, their categories and their items. A
-  type's slug is a URL prefix, so changing it moves every item under it.
+| Area | The trap, in one line | Skill |
+| --- | --- | --- |
+| Blog posts and categories | A post can hold an unsaved draft, and a body write lands in it | `writing-blog-posts` |
+| Galleries | A gallery is a shell and renders empty without its assets | `managing-galleries` |
+| Polls | An option's id is what its votes are attached to | `managing-polls` |
+| Images, documents, video and audio | Three separate libraries, and the names do not say which is which | `media-images-and-documents` |
+| Custom content | A type's slug is a URL prefix, so changing it moves every item under it | `custom-content-types` |
 
-Media is three separate things, and the names do not say so:
-
-| For | Use |
-| --- | --- |
-| Images | `search-media` and `upload-media` despite the generic names, plus `update-image` and `delete-image` |
-| Documents, the site's files | `search-media` finds them; `list-documents`, `upload-document`, `update-document` and `delete-document` manage them |
-| Video and audio | `list-media-files`, `get-media-file`, `upload-media-file`, `update-media-file`, `delete-media-file`, a different table from images |
+The media one is worth previewing here, because it is the mistake you can make before you know you
+have a question: `search-media` and `upload-media` are **images** despite reading generic,
+`list-documents` and friends are the site's **files**, and anything named `*-media-file` is the
+**video and audio** library, a different table with its own ids.
 
 Before telling the user something cannot be done, search the catalog with an empty query and
 look. "There is no tool for that" is a claim worth checking, and it is cheap to check.
