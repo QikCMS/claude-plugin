@@ -1,12 +1,12 @@
 ---
 name: using-the-tool-catalog
-description: Find and run a QikCMS tool that is not in the main tool list. Use when a QikCMS task needs something beyond the fourteen listed tools, such as reading a page stack, creating a page, editing one component, listing blueprints, menus, redirects, global styling or collections, or when a qikcms:// resource read fails.
+description: Find and run a QikCMS tool that is not in the main tool list. Use when a QikCMS task needs something beyond the fourteen listed tools, such as reading a page stack, creating a page, editing one component, listing blueprints, menus, redirects, global styling, collections, blog posts, galleries, polls, images, documents, video and audio, or the owner's own custom content types, or when a qikcms:// resource read fails.
 ---
 
 # Reaching the rest of the QikCMS tools
 
-Fourteen tools are listed directly. Most of the surface, roughly another ninety, sits behind two
-of them. If the thing you need is not in the list, it almost certainly exists.
+Fourteen tools are listed directly. Most of the surface, roughly another hundred and twenty, sits
+behind two of them. If the thing you need is not in the list, it almost certainly exists.
 
 ## The pair
 
@@ -57,8 +57,26 @@ Use the tool equivalents, which carry the same content:
 Worth knowing so you look rather than conclude a thing is impossible: reading a page's real tree
 (`get-page-stack`), creating and editing pages, editing a single comp (`update-component`,
 `add-component`, `move-component`, `remove-component`), blueprints (`list-blueprints`), the form
-vocabulary, menus, redirects, global styling, global variables, the header and footer, blog posts,
+vocabulary, menus, redirects, global styling, global variables, the header and footer, page FAQs,
 collections where that feature is on, and the publish tools.
+
+Then the content areas, each a full set of list, get, create, update and delete:
+
+- **Blog posts and their categories.** Categories are a tree, and a post's categories are set on
+  the post itself rather than on the category.
+- **Galleries.** A gallery is only a shell: its assets are the content, which is what the asset
+  tools are for. A gallery created without them renders as an empty page.
+- **Polls.** Votes come back as totals and can never be written.
+- **Custom content**, meaning the owner's own content types, their categories and their items. A
+  type's slug is a URL prefix, so changing it moves every item under it.
+
+Media is three separate things, and the names do not say so:
+
+| For | Use |
+| --- | --- |
+| Images | `search-media` and `upload-media` despite the generic names, plus `update-image` and `delete-image` |
+| Documents, the site's files | `search-media` finds them; `list-documents`, `upload-document`, `update-document` and `delete-document` manage them |
+| Video and audio | `list-media-files`, `get-media-file`, `upload-media-file`, `update-media-file`, `delete-media-file`, a different table from images |
 
 Before telling the user something cannot be done, search the catalog with an empty query and
 look. "There is no tool for that" is a claim worth checking, and it is cheap to check.
